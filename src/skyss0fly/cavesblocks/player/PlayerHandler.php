@@ -1,6 +1,6 @@
 <?php
 
-namespace skyss0fly\caveblocks\player;
+namespace skyss0fly\cavesblocks\player;
 
 use skyss0fly\caveblocks\utils\CustomIds;
 use pocketmine\block\BlockLegacyIds;
