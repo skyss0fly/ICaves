@@ -2,7 +2,7 @@
 
 namespace skyss0fly\cavesblocks;
 
-use skyss0fly\cavesblocks\utils\Config;
+use skyss0fly\cavesblocks\utils\CustomConfig;
 use pocketmine\block\Block;
 use pocketmine\block\BlockBreakInfo;
 use pocketmine\block\BlockFactory;
@@ -54,14 +54,14 @@ use pocketmine\BEDROCK_BLOCK_UPGRADE_SCHEMA_PATH;
 class Main extends PluginBase
 {
 
-	private CustomConfig $Config;
+	private CustomConfig $config;
 	private static self $instance;
 
 	protected function onLoad(): void
 	{
 		self::$instance = $this;
 		$this->saveResource("config.yml");
-		$this->Config = new CustomConfig(new Config($this->getDataFolder() . "config.yml", Config::YAML));
+		$this->config = new CustomConfig(new Config($this->getDataFolder() . "config.yml", Config::YAML));
 		self::initializeRuntimeIds();
 		$this->initBlocks();
 		$this->initTiles();
