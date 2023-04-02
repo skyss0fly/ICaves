@@ -159,7 +159,7 @@ class Main extends PluginBase
 		}
 		
 
-	public function registerBlock(Block $block, bool $registerToParser = true, bool $addToCreative = true): void
+	 function registerBlock(Block $block, bool $registerToParser = true, bool $addToCreative = true): void
 	{
 		BlockFactory::getInstance()->register($block, true);
 		if ($addToCreative && !CreativeInventory::getInstance()->contains($block->asItem())) {
