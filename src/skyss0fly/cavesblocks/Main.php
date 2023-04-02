@@ -172,7 +172,7 @@ class Main extends PluginBase
 		}
 	}
 
-	public function registerItem(Item $item, bool $registerToParser = true): void
+	 function registerItem(Item $item, bool $registerToParser = true): void
 	{
 		ItemFactory::getInstance()->register($item, true);
 		if (!CreativeInventory::getInstance()->contains($item)) {
@@ -185,7 +185,7 @@ class Main extends PluginBase
 		}
 	}
 
-	public function registerSlab(Slab $slab) : void{
+	 function registerSlab(Slab $slab) : void{
 		$this->registerBlock($slab);
 		$identifierFlattened = $slab->getIdInfo();
 		if($identifierFlattened instanceof BIDFlattened){
