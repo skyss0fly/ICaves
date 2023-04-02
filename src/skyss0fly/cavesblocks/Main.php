@@ -54,14 +54,14 @@ use pocketmine\BEDROCK_BLOCK_UPGRADE_SCHEMA_PATH;
 class Main extends PluginBase
 {
 
-	private CustomConfig $config;
+	private CustomConfig $customconfig;
 	private static self $instance;
 
 	protected function onLoad(): void
 	{
 		self::$instance = $this;
 		$this->saveResource("config.yml");
-		$this->config = new CustomConfig(new Config($this->getDataFolder() . "config.yml", Config::YAML));
+		$this->customconfig = new CustomConfig(new Config($this->getDataFolder() . "config.yml", Config::YAML));
 		self::initializeRuntimeIds();
 		$this->initBlocks();
 		$this->initTiles();
@@ -149,14 +149,7 @@ class Main extends PluginBase
 		$cfg = $this->getCustomConfig();
 		
 		
-		if ($cfg->isEnableWood()) {
-			$this->registerItem(new ItemBlock(new ItemIdentifier(CustomIds::CRIMSON_DOOOR_ITEM, 0), BlockFactory::getInstance()->get(CustomIds::CRIMSON_DOOR_BLOCK, 0)));
-			$this->registerItem(new ItemBlock(new ItemIdentifier(CustomIds::WARPED_DOOR_ITEM, 0), BlockFactory::getInstance()->get(CustomIds::WARPED_DOOR_BLOCK, 0)));
-			$this->registerItem(new ItemBlockWallOrFloor(new ItemIdentifier(CustomIds::CRIMSON_SIGN, 0), BlockFactory::getInstance()->get(CustomIds::CRIMSON_FLOOR_SIGN_BLOCK, 0), BlockFactory::getInstance()->get(CustomIds::CRIMSON_WALL_SIGN_BLOCK, 0)), false);
-			$this->registerItem(new ItemBlockWallOrFloor(new ItemIdentifier(CustomIds::WARPED_SIGN, 0), BlockFactory::getInstance()->get(CustomIds::WARPED_FLOOR_SIGN_BLOCK, 0), BlockFactory::getInstance()->get(CustomIds::WARPED_WALL_SIGN_BLOCK, 0)), false);
-			StringToItemParser::getInstance()->register("crimson_sign", fn() => ItemFactory::getInstance()->get(CustomIds::CRIMSON_SIGN));
-			StringToItemParser::getInstance()->register("warped_sign", fn() => ItemFactory::getInstance()->get(CustomIds::WARPED_SIGN));
-		}
+		
 		
 
 	 function registerBlock(Block $block, bool $registerToParser = true, bool $addToCreative = true): void
