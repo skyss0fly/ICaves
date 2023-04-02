@@ -193,3 +193,4 @@ class Main extends PluginBase
 		}
 	}
 }
+}
