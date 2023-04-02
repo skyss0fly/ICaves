@@ -3,6 +3,7 @@
 namespace skyss0fly\cavesblocks;
 
 use skyss0fly\cavesblocks\utils\CustomConfig;
+use skyss0fly\cavesblocks\utils\CustomId;
 use skyss0fly\cavesblocks\EventsListener\EventsListener;
 use pocketmine\block\Block;
 use pocketmine\block\BlockBreakInfo;
