@@ -1,6 +1,6 @@
 <?php
 
-namespace skyss0fly\caveblocks\utils;
+namespace skyss0fly\cavesblocks\utils;
 
 final class CustomIds {
     
