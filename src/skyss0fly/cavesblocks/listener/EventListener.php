@@ -11,3 +11,4 @@ class EventListener implements Listener {
     public function onPlayerCreation(PlayerCreationEvent $event){
         $event->setPlayerClass(MyPlayer::class);
     }
+}
