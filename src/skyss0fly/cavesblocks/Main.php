@@ -54,14 +54,14 @@ use pocketmine\BEDROCK_BLOCK_UPGRADE_SCHEMA_PATH;
 class Main extends PluginBase
 {
 
-	private CustomConfig $customconfig;
+	private CustomConfig $Config;
 	private static self $instance;
 
 	protected function onLoad(): void
 	{
 		self::$instance = $this;
 		$this->saveResource("config.yml");
-		$this->customconfig = new CustomConfig(new Config($this->getDataFolder() . "config.yml", Config::YAML));
+		$this->Config = new CustomConfig(new Config($this->getDataFolder() . "config.yml", Config::YAML));
 		self::initializeRuntimeIds();
 		$this->initBlocks();
 		$this->initTiles();
