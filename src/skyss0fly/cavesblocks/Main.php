@@ -66,6 +66,7 @@ class Main extends PluginBase
 		$this->initBlocks();
 		$this->initTiles();
 		$this->initItems();
+		$this->getLogger()info("Loaded Le Plugin of Caving");
 	}
 
 	protected function onEnable(): void
