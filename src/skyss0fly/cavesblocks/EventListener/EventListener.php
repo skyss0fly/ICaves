@@ -1,6 +1,6 @@
 <?php
 
-namespace skyss0fly\cavesblocks\listener;
+namespace skyss0fly\cavesblocks\EventListener;
 
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerCreationEvent;
