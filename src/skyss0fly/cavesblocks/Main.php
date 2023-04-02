@@ -1,6 +1,6 @@
 <?php
 
-namespace skyss0lfly\cavesblocks;
+namespace skyss0fly\cavesblocks;
 
 
 use pocketmine\block\Block;
