@@ -1,6 +1,6 @@
 <?php
 
-namespace ipad54\netherblocks;
+namespace skyss0lfly\cavesblocks;
 
 
 use pocketmine\block\Block;
