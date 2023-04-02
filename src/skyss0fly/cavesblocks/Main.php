@@ -2,7 +2,7 @@
 
 namespace skyss0fly\cavesblocks;
 
-
+use skyss0fly\cavesblocks\utils\Config;
 use pocketmine\block\Block;
 use pocketmine\block\BlockBreakInfo;
 use pocketmine\block\BlockFactory;
