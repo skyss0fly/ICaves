@@ -51,7 +51,7 @@ use pocketmine\scheduler\AsyncTask;
 use pocketmine\Server;
 use pocketmine\utils\Config;
 use ReflectionMethod;
-use pmmp\BedrockBlockUpgradeSchema;
+use skyss0fly\nbtblocks;
 
 
 class Main extends PluginBase
@@ -105,7 +105,7 @@ class Main extends PluginBase
 		$method->setAccessible(true);
 
 $file = "block_legacy_id_map.json";
-$blockIdMap = json_decode(file_get_contents(BedrockBlockUpgradeSchema . "/$file"), true);
+$blockIdMap = json_decode(file_get_contents(nbtblocks . "/$file"), true);
 	
 		$metaMap = [];
 
