@@ -103,7 +103,9 @@ class Main extends PluginBase
 		$method = new ReflectionMethod(RuntimeBlockMapping::class, "registerMapping");
 		$method->setAccessible(true);
 
-		$blockIdMap = json_decode(file_get_contents(\pocketmine\BEDROCK_BLOCK_UPGRADE_SCHEMA_PATH . 'block_legacy_id_map.json'), true);
+$file = "block_legacy_id_map.json";
+$blockIdMap = json_decode(file_get_contents(BEDROCK_BLOCK_UPGRADE_SCHEMA_PATH . "/$file"), true);
+	
 		$metaMap = [];
 
 		foreach ($instance->getBedrockKnownStates() as $runtimeId => $nbt) {
