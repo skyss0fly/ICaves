@@ -51,7 +51,7 @@ use pocketmine\scheduler\AsyncTask;
 use pocketmine\Server;
 use pocketmine\utils\Config;
 use ReflectionMethod;
-use const pmmp/BedrockBlockUpgradeSchema;
+use const pmmp\BedrockBlockUpgradeSchema;
 
 
 class Main extends PluginBase
