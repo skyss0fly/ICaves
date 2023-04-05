@@ -51,7 +51,8 @@ use pocketmine\scheduler\AsyncTask;
 use pocketmine\Server;
 use pocketmine\utils\Config;
 use ReflectionMethod;
-use const pocketmine\BEDROCK_BLOCK_UPGRADE_SCHEMA_PATH;
+use const pmmp/BedrockBlockUpgradeSchema;
+
 
 class Main extends PluginBase
 {
@@ -104,7 +105,7 @@ class Main extends PluginBase
 		$method->setAccessible(true);
 
 $file = "block_legacy_id_map.json";
-$blockIdMap = json_decode(file_get_contents(BEDROCK_BLOCK_UPGRADE_SCHEMA_PATH . "/$file"), true);
+$blockIdMap = json_decode(file_get_contents(BedrockBlockUpgradeSchema . "/$file"), true);
 	
 		$metaMap = [];
 
