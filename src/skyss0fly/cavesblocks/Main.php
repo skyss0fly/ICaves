@@ -51,7 +51,7 @@ use pocketmine\scheduler\AsyncTask;
 use pocketmine\Server;
 use pocketmine\utils\Config;
 use ReflectionMethod;
-use const pocketmine\src\BEDROCK_BLOCK_UPGRADE_SCHEMA_PATH;
+use const pocketmine\data\BEDROCK_BLOCK_UPGRADE_SCHEMA_PATH;
 
 class Main extends PluginBase
 {
