@@ -2,9 +2,9 @@
 
 namespace skyss0fly\cavesblocks;
 
-use skyss0fly\src\cavesblocks\utils\CustomConfig;
-use skyss0fly\src\cavesblocks\utils\CustomId;
-use skyss0fly\src\cavesblocks\EventListener\EventListener;
+use skyss0fly\cavesblocks\utils\CustomConfig;
+use skyss0fly\cavesblocks\utils\CustomId;
+use skyss0fly\cavesblocks\events\EventListener;
 use pocketmine\block\Block;
 use pocketmine\block\BlockBreakInfo;
 use pocketmine\block\BlockFactory;
