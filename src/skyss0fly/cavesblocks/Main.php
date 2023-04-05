@@ -68,6 +68,7 @@ class Main extends PluginBase
 		$this->initBlocks();
 		$this->initTiles();
 		$this->initItems();
+		$this->getLogger()info("ICaves Loaded");
 		
 	}
 
