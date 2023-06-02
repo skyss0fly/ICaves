@@ -6,3 +6,5 @@
 
 ### Implemented blocks
 - [X] Deepslate block
+
+# deprecated plugin.
